@@ -10,7 +10,7 @@
 
 <body>
         <?php
-        
+
 
         include 'functionSQL.php';
         include 'table.php';
@@ -18,12 +18,13 @@
         $headers = getHeaderTable();
         $rows = getAllProduit();
         table($rows, getHeaderTable());
-        
+
 
         ?>
 
-        <a href=formulaire.php?id=0 >Ajouter une vapoteuse</a> 
-
+        <a href=formulaire.php?id=0>Ajouter un produit</a>
+        <a href=formulaire.php? id=0>suprimer un produit</a>
+        <a href=formulaire.php?>modifier</a>
 </body>
 
 </html>

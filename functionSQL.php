@@ -18,7 +18,7 @@ function getDataBaseConnexion()
         // on crée un elemnet de pdo que l ont met dans une variable en instancie PDO
         $db = new PDO($dsn, DBUSER, DBPASS);
 
-        $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+        $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_BOTH);
         // on s' assure d ' envoyer les données UTF8
         $db->exec("SET NAMES utf8");
         return $db;
@@ -104,7 +104,7 @@ function getNewProduit() {
     $produit['id'] = "";
     $produit['reference'] = "";
     $produit['nomArticle'] = "";
-    $produit['PrixAchat'] = "";
+    $produit['prixAchat'] = "";
     $produit['description'] = "";
     $produit['prixVente'] = "";
     $produit['quantiter'] = "";
